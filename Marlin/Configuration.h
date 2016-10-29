@@ -208,10 +208,10 @@ Here are some standard links for getting your machine calibrated:
   #define K1 0.95 //smoothing factor within the PID
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // Tuned CubeX repstrap
-  #define  DEFAULT_Kp 36.02
-  #define  DEFAULT_Ki 6.32
-  #define  DEFAULT_Kd 51.34
+  // Tuned CubeX repstrap with E3D v6 hotend 25W cartridge heater
+  #define  DEFAULT_Kp 25.70
+  #define  DEFAULT_Ki 1.98
+  #define  DEFAULT_Kd 83.38
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
