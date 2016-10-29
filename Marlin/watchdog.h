@@ -1,16 +1,14 @@
 #ifndef WATCHDOG_H
 #define WATCHDOG_H
+
 #include "Marlin.h"
-#ifdef USE_WATCHDOG
+#include <avr/wdt.h>
 
-  // intialise watch dog with a 1 sec interrupt time
-  void wd_init();
-  // pad the dog/reset watchdog. MUST be called at least every second after the first wd_init or avr will go into emergency procedures..
-  void wd_reset();
+// Initialize watchdog with a 4 second interrupt time
+void watchdog_init();
 
-#else
-  FORCE_INLINE void wd_init() {};
-  FORCE_INLINE void wd_reset() {};
-#endif
+// Reset watchdog. MUST be called at least every 4 seconds after the
+// first watchdog_init or AVR will go into emergency procedures.
+inline void watchdog_reset() { wdt_reset(); }
 
 #endif
