@@ -209,9 +209,9 @@ Here are some standard links for getting your machine calibrated:
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Tuned CubeX repstrap with E3D v6 hotend 25W cartridge heater
-  #define  DEFAULT_Kp 25.70
-  #define  DEFAULT_Ki 1.98
-  #define  DEFAULT_Kd 83.38
+  #define  DEFAULT_Kp 25.39
+  #define  DEFAULT_Ki 2.00
+  #define  DEFAULT_Kd 80.49
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
