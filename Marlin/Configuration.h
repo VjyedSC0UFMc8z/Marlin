@@ -194,7 +194,7 @@ Here are some standard links for getting your machine calibrated:
 
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define BANG_MAX 150 // limits current to nozzle while in bang-bang mode; 255=full current
+#define BANG_MAX 255 // limits current to nozzle while in bang-bang mode; 255=full current
 #define PID_MAX BANG_MAX // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #if ENABLED(PIDTEMP)
   //#define PID_DEBUG // Sends debug data to the serial port.
@@ -209,9 +209,9 @@ Here are some standard links for getting your machine calibrated:
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Tuned CubeX repstrap with E3D v6 hotend 25W cartridge heater
-  #define  DEFAULT_Kp 25.39
-  #define  DEFAULT_Ki 2.00
-  #define  DEFAULT_Kd 80.49
+  #define  DEFAULT_Kp 26.97
+  #define  DEFAULT_Ki 2.11
+  #define  DEFAULT_Kd 86.16
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -587,7 +587,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,20.9564301}  // tuned to CubeX Trio
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,26}  // tuned to CubeX Trio
 #define DEFAULT_MAX_FEEDRATE          {150, 150, 20, 10}   // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
