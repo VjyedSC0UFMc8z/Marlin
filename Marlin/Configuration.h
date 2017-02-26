@@ -587,8 +587,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,418.5}  // tuned to CubeX Trio Extruder via http://wiki.e3d-online.com/wiki/Titan_Assembly#Firmware_Calibration
-#define DEFAULT_MAX_FEEDRATE          {150, 150, 20, 10}   // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,418.5/4}  // tuned to CubeX Trio Extruder via http://wiki.e3d-online.com/wiki/Titan_Assembly#Firmware_Calibration
+#define DEFAULT_MAX_FEEDRATE          {150, 150, 200, 10}   // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,5000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
