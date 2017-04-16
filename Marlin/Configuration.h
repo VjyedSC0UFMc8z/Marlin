@@ -99,7 +99,6 @@ Here are some standard links for getting your machine calibrated:
 #define POWER_SUPPLY 1
 
 // Define this to have the electronics keep the power supply off on startup. If you don't know what this is leave it.
-//#define PS_DEFAULT_OFF
 
 // @section temperature
 
@@ -209,9 +208,10 @@ Here are some standard links for getting your machine calibrated:
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Tuned CubeX repstrap with E3D v6 hotend 25W cartridge heater
-  #define  DEFAULT_Kp 26.97
-  #define  DEFAULT_Ki 2.11
-  #define  DEFAULT_Kd 86.16
+  //recalibrated 3/5/17
+  #define  DEFAULT_Kp 25.30
+  #define  DEFAULT_Ki 1.92
+  #define  DEFAULT_Kd 83.31
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -255,9 +255,10 @@ Here are some standard links for getting your machine calibrated:
 
 //CubeX refit HBP:
 //top:bottom  Glass : Printerbot HBP 12V : Cork : PolyCarbonate : Aluminum chassis.
-  #define  DEFAULT_bedKp 1122.89
-  #define  DEFAULT_bedKi 5.92
-  #define  DEFAULT_bedKd 637.24
+//recalibrated 3/5/17 for fans at 50%
+  #define  DEFAULT_bedKp 401.56
+  #define  DEFAULT_bedKi 77.07
+  #define  DEFAULT_bedKd 523.03
 
   //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -588,7 +589,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 // default settings
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,418.5/4}  // tuned to CubeX Trio Extruder via http://wiki.e3d-online.com/wiki/Titan_Assembly#Firmware_Calibration
-#define DEFAULT_MAX_FEEDRATE          {150, 150, 200, 10}   // (mm/sec)
+#define DEFAULT_MAX_FEEDRATE          {150, 150, 20, 10}   // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,5000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
