@@ -397,11 +397,11 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS -37
+#define X_MIN_POS -47
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS 200
-#define Y_MAX_POS 270
+#define Y_MAX_POS 260
 #define Z_MAX_POS 240
 
 //===========================================================================
@@ -446,7 +446,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the lo
 
   //#define AUTO_BED_LEVELING_FEATURE // Delete the comment to enable (remove // at the start of the line)
 //#define DEBUG_LEVELING_FEATURE
-#define Z_MIN_PROBE_REPEATABILITY_TEST  // If not commented out, Z-Probe Repeatability test will be included if Auto Bed Leveling is Enabled.
+//#define Z_MIN_PROBE_REPEATABILITY_TEST  // If not commented out, Z-Probe Repeatability test will be included if Auto Bed Leveling is Enabled.
 
 #if ENABLED(AUTO_BED_LEVELING_FEATURE)
 
