@@ -226,3 +226,5 @@
   #endif // !NEWPANEL
 
 #endif // ULTRA_LCD
+
+#define FIL_RUNOUT_PIN 85
