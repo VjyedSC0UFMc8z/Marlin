@@ -80,13 +80,23 @@
 #define X_DIR_PIN          48
 #define X_ENABLE_PIN       29
 
-#define Y_STEP_PIN         36
-#define Y_DIR_PIN          49
-#define Y_ENABLE_PIN       28
+//original
+//#define Y_STEP_PIN         36
+//#define Y_DIR_PIN          49
+//#define Y_ENABLE_PIN       28
 
-#define Z_STEP_PIN         35
-#define Z_DIR_PIN          47
-#define Z_ENABLE_PIN       27
+//#define Z_STEP_PIN         35
+//#define Z_DIR_PIN          47
+//#define Z_ENABLE_PIN       27
+
+#define Y_STEP_PIN         35
+#define Y_DIR_PIN          47
+#define Y_ENABLE_PIN       27
+
+#define Z_STEP_PIN         36
+#define Z_DIR_PIN          49
+#define Z_ENABLE_PIN       28
+//end switch motors
 
 #define E0_STEP_PIN        34
 #define E0_DIR_PIN         43
@@ -99,10 +109,17 @@
 // Microstepping pins - Mapping not from fastio.h (?)
 #define X_MS1_PIN          40
 #define X_MS2_PIN          41
-#define Y_MS1_PIN          69
-#define Y_MS2_PIN          39
-#define Z_MS1_PIN          68
-#define Z_MS2_PIN          67
+//original
+//#define Y_MS1_PIN          69
+//#define Y_MS2_PIN          39
+//#define Z_MS1_PIN          68
+//#define Z_MS2_PIN          67
+#define Y_MS1_PIN          68
+#define Y_MS2_PIN          67
+#define Z_MS1_PIN          69
+#define Z_MS2_PIN          39
+//end switch microstepping
+
 #define E0_MS1_PIN         65
 #define E0_MS2_PIN         66
 #define E1_MS1_PIN         63
