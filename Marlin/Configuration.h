@@ -352,10 +352,10 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Tuned CubeX repstrap with E3D v6 hotend 25W cartridge heater
-  //Calibrated @270C for PA_CF 9/20/21
-  #define  DEFAULT_Kp 42.17
-  #define  DEFAULT_Ki 5.72
-  #define  DEFAULT_Kd 77.72
+  //Calibrated @210C for PPL 1/31/2022
+  #define  DEFAULT_Kp 25.84
+  #define  DEFAULT_Ki 1.88
+  #define  DEFAULT_Kd 88.90
 
 
   //recalibrated 12/30/20
@@ -409,10 +409,10 @@
   //#define  DEFAULT_bedKd 523.03
 
   //12V  silicone heater into Al spreader with Geckotek now with power MOSFET
-  //from pidautotune 11/7/2020
-#define  DEFAULT_bedKp 525.16
-#define  DEFAULT_bedKi 91.59
-#define  DEFAULT_bedKd 752.81
+  //from pidautotune 1/31/2022
+  #define  DEFAULT_bedKp 701.82
+  #define  DEFAULT_bedKi 136.00
+  #define  DEFAULT_bedKd 905.44
 
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
@@ -788,7 +788,7 @@ from pins.rambo #define SERVO0_PIN         22 // Motor header MX1
 
 // The size of the print bed
 #define X_BED_SIZE 275
-#define Y_BED_SIZE 275
+#define Y_BED_SIZE 264
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
