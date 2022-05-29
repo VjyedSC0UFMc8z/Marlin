@@ -188,7 +188,7 @@
   #define PARKING_EXTRUDER_PARKING_X { -78, 184 }     // X positions for parking the extruders
   #define PARKING_EXTRUDER_GRAB_DISTANCE 1            // mm to move beyond the parking point to grab the extruder
   #define PARKING_EXTRUDER_SECURITY_RAISE 5           // Z-raise before parking
-  #define HOTEND_OFFSET_Z { 0.0, 1.3 }                // Z-offsets of the two hotends. The first must be 0.
+  #define HOTEND_OFFSET_Z { 0.0, 1.77 }                // Z-offsets of the two hotends. The first must be 0.
 #endif
 
 /**
@@ -352,10 +352,10 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Tuned CubeX repstrap with E3D v6 hotend 25W cartridge heater
-  //Calibrated @210C for PPL 1/31/2022
-  #define  DEFAULT_Kp 25.84
-  #define  DEFAULT_Ki 1.88
-  #define  DEFAULT_Kd 88.90
+  //Calibrated @220C 05/29/2022
+	#define  DEFAULT_Kp 28.75
+	#define  DEFAULT_Ki 2.31
+	#define  DEFAULT_Kd 89.50
 
 
   //recalibrated 12/30/20
@@ -534,7 +534,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,110.80}  // tuned to CubeX Trio Extruder via http://wiki.e3d-online.com/wiki/Titan_Assembly#Firmware_Calibration
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,101.10}  // tuned to CubeX Trio Extruder via http://wiki.e3d-online.com/wiki/Titan_Assembly#Firmware_Calibration
 
 /**
  * Default Max Feed Rate (mm/s)
