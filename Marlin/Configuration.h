@@ -410,9 +410,9 @@
 
   //12V  silicone heater into Al spreader with Geckotek now with power MOSFET
   //from pidautotune 1/31/2022
-  #define  DEFAULT_bedKp 701.82
-  #define  DEFAULT_bedKi 136.00
-  #define  DEFAULT_bedKd 905.44
+  #define  DEFAULT_bedKp 525.16
+  #define  DEFAULT_bedKi 91.59
+  #define  DEFAULT_bedKd 752.81
 
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
@@ -534,14 +534,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,101.10}  // tuned to CubeX Trio Extruder via http://wiki.e3d-online.com/wiki/Titan_Assembly#Firmware_Calibration
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {87.49,87.49,1066.67,100.64}  // tuned to CubeX Trio Extruder via http://wiki.e3d-online.com/wiki/Titan_Assembly#Firmware_Calibration
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          {150, 150, 20, 10}
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 12, 120}
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -549,7 +549,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      {500, 500, 100, 10000}
+#define DEFAULT_MAX_ACCELERATION      {50000, 50000, 500, 10000}
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -559,9 +559,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   100    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  1500    // E acceleration for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk (mm/s)
@@ -571,10 +571,10 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 20.0
-#define DEFAULT_YJERK                 10.0
-#define DEFAULT_ZJERK                  0.4
-#define DEFAULT_EJERK                  5.0
+#define DEFAULT_XJERK                 12.0
+#define DEFAULT_YJERK                 12.0
+#define DEFAULT_ZJERK                  0.2
+#define DEFAULT_EJERK                  2.5
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -696,7 +696,7 @@ from pins.rambo #define SERVO0_PIN         22 // Motor header MX1
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER -33  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 4  // Y offset: -front +behind [the nozzle]
-//#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.75   // Z offset: -below +above  [the nozzle] Changes with nozzle change
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.77   // Z offset: -below +above  [the nozzle] Changes with nozzle change
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 5000
