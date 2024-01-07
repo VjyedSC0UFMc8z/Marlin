@@ -698,7 +698,7 @@ from pins.rambo #define SERVO0_PIN         22 // Motor header MX1
 //calibrated for OmniaDrop v3
 #define X_PROBE_OFFSET_FROM_EXTRUDER 33  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 30  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.0   // Z offset: -below +above  [the nozzle] Changes with nozzle change set with M851
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.35   // Z offset: -below +above  [the nozzle] Changes with nozzle change set with M851
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 5000
