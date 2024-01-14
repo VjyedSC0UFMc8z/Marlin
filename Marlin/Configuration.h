@@ -188,7 +188,7 @@
   #define PARKING_EXTRUDER_PARKING_X { -78, 184 }     // X positions for parking the extruders
   #define PARKING_EXTRUDER_GRAB_DISTANCE 1            // mm to move beyond the parking point to grab the extruder
   #define PARKING_EXTRUDER_SECURITY_RAISE 5           // Z-raise before parking
-  #define HOTEND_OFFSET_Z { 0.0, 3.0 }                // Z-offsets of the two hotends. The first must be 0.
+  #define HOTEND_OFFSET_Z { 0.0, 1 }                // Z-offsets of the two hotends. The first must be 0.
 #endif
 
 /**
@@ -698,7 +698,7 @@ from pins.rambo #define SERVO0_PIN         22 // Motor header MX1
 //calibrated for OmniaDrop v3
 #define X_PROBE_OFFSET_FROM_EXTRUDER 33  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 30  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.35   // Z offset: -below +above  [the nozzle] Changes with nozzle change set with M851
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.6   // Z offset: -below +above  [the nozzle] Changes with nozzle change set with M851
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 5000
